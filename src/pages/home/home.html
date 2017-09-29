@@ -7,12 +7,24 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<ion-content class="card-background-page">
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <div style="margin-top:20% ">
+    <ion-card (click)="ColomboToJaffna();">
+      <img src="assets/img/jaffna.jpg"/>
+      <div class="card-title">Colombo To Jaffna</div>
+    </ion-card>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+    <ion-card (click)="JaffnaToColombo();">
+      <img src="assets/img/colombo.jpg"/>
+      <div class="card-title">Jaffna To Colombo</div>
+    </ion-card>
+  </div>
+
+
+
+  <!--<div padding>
+    <button ion-button full (click)="booking()">Jaffna To Colombo</button>
+  </div>-->
+
 </ion-content>

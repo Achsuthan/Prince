@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>User View</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div style="margin-top:25% ">
+    <ion-item>
+      <ion-icon name="pin" item-left ></ion-icon>
+      <ion-label >Location </ion-label>
+      <ion-select [(ngModel)]="jaffna_to_colombo">
+        <ion-option value="jaffna_to_colombo">Jaffna To Colombo </ion-option>
+        <ion-option value="colombo_to_jaffna">Colombo To Jaffna</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <br/><br/>
+
+    <ion-item>
+      <ion-icon name="bus" item-left primary></ion-icon>
+      <ion-label >Bus </ion-label>
+      <ion-select [(ngModel)]="bus">
+        <ion-option value="bus1">Bus 1 </ion-option>
+        <ion-option value="bus2">Bus 2</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <br/><br/>
+
+    <ion-item>
+      <ion-icon name="calendar" item-left primary></ion-icon>
+      <ion-label >Select Bus Date</ion-label>
+      <ion-datetime displayFormat="YYYY-MM-DD" pickerFormat="YYYY MM DD" [(ngModel)]="dob"></ion-datetime>
+    </ion-item>
+
+    <br/>
+
+    <div padding>
+      <button ion-button full (click)="ViewUser()">View User</button>
+    </div>
+
+  </div>
+
+</ion-content>

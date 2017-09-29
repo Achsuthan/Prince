@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>View and Delete Booking</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
+
+    <ion-card  *ngFor="let item of items" (click)="Delete(item);">
+      <ion-card-header style="text-align: center;">
+        {{item}}
+      </ion-card-header>
+
+
+      <ion-list>
+        <button ion-item>
+          <ion-icon name="person"> &nbsp;</ion-icon>
+          Seat  &nbsp;&nbsp;&nbsp;&nbsp;     :  &nbsp;&nbsp;   11
+        </button>
+
+
+        <button ion-item>
+          <ion-icon name="locate"> &nbsp;</ion-icon>
+          From  &nbsp;&nbsp;&nbsp;&nbsp;     :  &nbsp;&nbsp;   Wellawatha
+        </button>
+
+        <button ion-item>
+          <ion-icon name="locate" > &nbsp;</ion-icon>
+          To   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     : &nbsp;&nbsp;     Jaffna
+        </button>
+
+
+      </ion-list>
+    </ion-card>
+  </ion-list>
+
+
+
+</ion-content>

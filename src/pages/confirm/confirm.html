@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Confirm Booking {{bus_name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-icon name="pin" item-left primary></ion-icon>
+    <ion-label>Travelling place </ion-label>
+    <ion-label>Jaffna To Colombo </ion-label>
+  </ion-item>
+
+  <br/><br/>
+
+
+
+  <ion-item>
+    <ion-icon name="bus" item-left primary></ion-icon>
+    <ion-label >Selected Bus</ion-label>
+    <ion-label >Prince A Bus</ion-label>
+  </ion-item>
+
+  <br/><br/>
+
+  <ion-item>
+    <ion-icon name="calendar" item-left primary></ion-icon>
+    <ion-label >Select Date </ion-label>
+    <ion-label >25-09-2017 </ion-label>
+  </ion-item>
+
+  <br/><br/>
+
+  <ion-item>
+    <ion-icon name="call" item-left primary></ion-icon>
+    <ion-label >Contact Number </ion-label>
+    <ion-input type="tel" value=""></ion-input>
+  </ion-item>
+
+  <br/><br/>
+
+  <ion-item>
+    <ion-icon name="pin" item-left primary></ion-icon>
+    <ion-label >Departure Place </ion-label>
+    <ion-select [(ngModel)]="departure">
+      <ion-option value="location1">Location 1 </ion-option>
+      <ion-option value="location2">Location 2</ion-option>
+      <ion-option value="location3">Location 3 </ion-option>
+      <ion-option value="location4">Location 4</ion-option>
+      <ion-option value="location5">Location 5 </ion-option>
+      <ion-option value="location6">Location 6</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <br/><br/>
+
+  <ion-item>
+    <ion-icon name="pin" item-left primary></ion-icon>
+    <ion-label >Arrival Place </ion-label>
+    <ion-select [(ngModel)]="arrival">
+      <ion-option value="location1">Location 1 </ion-option>
+      <ion-option value="location2">Location 2</ion-option>
+      <ion-option value="location3">Location 3 </ion-option>
+      <ion-option value="location4">Location 4</ion-option>
+      <ion-option value="location5">Location 5 </ion-option>
+      <ion-option value="location6">Location 6</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <div padding>
+    <button ion-button full (click)="Book()">View User</button>
+
+    <br/>
+
+    <button ion-button full color="danger" (click)="Cancel();">Cancel</button>
+  </div>
+
+</ion-content>

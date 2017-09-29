@@ -1,0 +1,442 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{bus_name}} Booking
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+
+
+  <br/><br/>
+  <ion-grid>
+    <ion-row class="bus">
+      <ion-col>
+      </ion-col>
+
+      <ion-col>
+        <b>Bus Front side</b>
+      </ion-col>
+
+      <ion-col>
+        <img src="assets/img/bus_handle.png" style="max-width: 50px; max-height:50px; ">
+        <br/>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>
+          &nbsp;&nbsp;<img id="seat_1" (click)="Male($event);" (press)="Female($event)" src="assets/img/red_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          &nbsp;<img id="seat_2" (click)="Male($event);" (press)="Female($event)" src="assets/img/red_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>&nbsp;&nbsp;&nbsp;</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <!--<button ion-button  [style.background]="seat1" (click)="book(1)">
+            01
+          </button>-->
+          <img id="seat_3" (click)="Male($event);" (press)="Female($event)" src="assets/img/red_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_4" (click)="Male($event);" (press)="Female($event)" src="assets/img/red_seat.png">
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div>
+          <img id="seat_5" (click)="Male($event);" (press)="Female($event)" src="assets/img/red_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_6" (click)="Male($event);" (press)="Female($event)" src="assets/img/red_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>&nbsp;&nbsp;&nbsp;</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_7" (click)="Male($event);" (press)="Female($event)" src="assets/img/purple_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_8" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <div>
+          <img id="seat_9" (click)="Male($event);" (press)="Female($event)" src="assets/img/red_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_10" (click)="Male($event);" (press)="Female($event)" src="assets/img/red_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>&nbsp;&nbsp;&nbsp;</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_11" (click)="Male($event);" (press)="Female($event)" src="assets/img/red_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_12" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <div>
+          <img id="seat_13" (click)="Male($event);" (press)="Female($event)" src="assets/img/red_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_14" (click)="Male($event);" (press)="Female($event)" src="assets/img/red_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>&nbsp;&nbsp;&nbsp;</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_15" (click)="Male($event);" (press)="Female($event)" src="assets/img/red_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_16" (click)="Male($event);" (press)="Female($event)" src="assets/img/red_seat.png">
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <div>
+          <img id="seat_17" (click)="Male($event);" (press)="Female($event)" src="assets/img/red_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_18" (click)="Male($event);" (press)="Female($event)" src="assets/img/red_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>&nbsp;&nbsp;&nbsp;</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_19" (click)="Male($event);" (press)="Female($event)" src="assets/img/red_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_20" (click)="Male($event);" (press)="Female($event)" src="assets/img/red_seat.png">
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <div>
+          <img id="seat_21" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img  id="seat_22" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>&nbsp;&nbsp;&nbsp;</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_23" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_24" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <div>
+          <img id="seat_25" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_26" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>&nbsp;&nbsp;&nbsp;</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <!--<img src="assets/img/green_seat.png">-->
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <!--<img src="assets/img/green_seat.png">-->
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <div>
+          <img id="seat_27" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_28" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>&nbsp;&nbsp;&nbsp;</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_29" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_30" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <div>
+          <img id="seat_31" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_32" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>&nbsp;&nbsp;&nbsp;</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_33" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_34" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <div>
+          <img id="seat_35" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img  id="seat_36" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>&nbsp;&nbsp;&nbsp;</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_37" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_38" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <div>
+          <img id="seat_39" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_40" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>&nbsp;&nbsp;&nbsp;</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_41" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_42" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <div>
+          <img id="seat_43" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_44" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>&nbsp;&nbsp;&nbsp;</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_45" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_46" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <div>
+          <img id="seat_47" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_48" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>&nbsp;
+          <img id="seat_49" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img  id="seat_50" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img id="seat_51" (click)="Male($event);" (press)="Female($event)" src="assets/img/green_seat.png">
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <br/><br/>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <img  src="assets/img/green_seat.png">
+      </ion-col>
+      <ion-col>
+        <br/>
+        <b>Available </b>
+      </ion-col>
+
+      <ion-col>
+        <img src="assets/img/red_seat.png">
+      </ion-col>
+      <ion-col>
+        <br/>
+        <b>Booked</b>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <img src="assets/img/purple_seat.png">
+      </ion-col>
+      <ion-col>
+        <br/>
+        <b>Female Seat</b>
+      </ion-col>
+
+
+      <ion-col>
+        <img src="assets/img/black_seat.png">
+      </ion-col>
+      <ion-col>
+        <br/>
+        <b>Not Available</b>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <br/>
+
+  <div>
+    <b>Sleceted Seats are  &nbsp;&nbsp; : &nbsp;&nbsp;  {{seat_string}}</b>
+  </div>
+
+  <br/>
+  <div padding>
+    <button ion-button full (click)="Confirm()">Confirm Booking</button>
+  </div>
+
+</ion-content>

@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Booking</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card (click)="bus();">
+    <ion-card-header style="text-align: center;">
+      Prince A
+    </ion-card-header>
+
+    <ion-list>
+      <button ion-item>
+        <ion-icon name="locate"> &nbsp;</ion-icon>
+        From  &nbsp;&nbsp;&nbsp;&nbsp;     :  &nbsp;&nbsp;   Jaffna
+      </button>
+
+      <button ion-item>
+        <ion-icon name="locate" > &nbsp;</ion-icon>
+        To   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     : &nbsp;&nbsp;     Colombo
+      </button>
+
+      <button ion-item>
+        <ion-icon name="clock" >&nbsp;</ion-icon>
+        Start  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     :  &nbsp;&nbsp;   6:45 PM
+      </button>
+
+
+      <button ion-item>
+        <ion-icon name="clock" >&nbsp;</ion-icon>
+        Finish  &nbsp;&nbsp;&nbsp;&nbsp;     :  &nbsp;&nbsp;   4:45 AM
+      </button>
+
+    </ion-list>
+  </ion-card>
+
+</ion-content>
